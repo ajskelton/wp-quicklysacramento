@@ -1,0 +1,642 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+input {
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 100%}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style-type: none;
+}
+input, textarea {
+    outline: 0;
+}
+strong {
+    font-weight: bold;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.cb {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font: 14px/21px Verdana, Geneva, sans-serif;
+    color: #009;
+}
+p, ul, ol {
+    margin-bottom: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+h1 {
+    color: #009;
+    font-size: 28px;
+    font-weight: bold;
+}
+h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: .3em;
+}
+h3 {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.main-header {
+    display: block;
+    position: relative;
+    background: #f90;
+    background: url('orangesquare.png') repeat;
+    background: -moz-radial-gradient(center bottom, ellipse cover, #f90 0, #f60 80%);
+    background: -webkit-gradient(radial, center bottom, 0px, center bottom, 100%, color-stop(0%, #f90), color-stop(80%, #f60));
+    background: -webkit-radial-gradient(center bottom, ellipse cover, #f90 0, #f60 80%);
+    background: -o-radial-gradient(center bottom, ellipse cover, #f90 0, #f60 80%);
+    background: -ms-radial-gradient(center bottom, ellipse cover, #f90 0, #f60 80%);
+    background: radial-gradient(ellipse at center bottom, #f90 0, #f60 80%);
+}
+.menu-navigation {
+    background: white;
+    height: 40px;
+    position: relative;
+    margin: 60px auto 0;
+    z-index: 4;
+    top: 12px;
+    box-shadow: 0 3px 1px -1px rgba(0, 0, 0, 0.4);
+}
+.menu-navigation:before, .menu-navigation:after {
+    content: "";
+    width: .6em;
+    bottom: -0.7em;
+    position: absolute;
+    display: block;
+    border: 1.5em solid white;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.4);
+    z-index: -2;
+}
+.menu-navigation:before {
+    left: -2.35em;
+    border-right-width: 1.05em;
+    border-left-color: transparent;
+}
+.menu-navigation:after {
+    right: -2.35em;
+    border-left-width: 1.05em;
+    border-right-color: transparent;
+}
+.menu-navigation ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+    height: 2em;
+    margin-bottom: 0;
+}
+.menu-navigation ul:before, .menu-navigation ul:after {
+    content: "";
+    bottom: -0.75em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    z-index: -1;
+}
+.menu-navigation ul:before {
+    left: 0;
+    border-width: .8em 0 0 .8em;
+}
+.menu-navigation ul:after {
+    right: 0;
+    border-width: .8em .8em 0 0;
+}
+.menu-navigation ul>li {
+    float: left;
+    width: 120px;
+}
+.menu-navigation ul>li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    font-size: 20px;
+    color: #f60;
+    background: white;
+}
+.menu-navigation ul>li a:hover {
+    text-decoration: underline;
+}
+.menu-navigation ul>li:nth-of-type(3) {
+    margin-left: 430px;
+}
+.menu-navigation ul>li ul {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+    -webkit-transition: opacity .2s ease-in;
+    -moz-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
+    transition: opacity .2s ease-in;
+    position: absolute;
+}
+.menu-navigation ul>li ul li {
+    float: none;
+    position: relative;
+}
+.menu-navigation ul>li ul li a {
+    padding: 0 1em;
+    margin-right: 0;
+    text-align: left;
+}
+.menu-navigation ul>li:hover>ul {
+    opacity: 10;
+    filter: alpha(opacity=100);
+    visibility: visible;
+    display: block;
+}
+.menu-navigation .logo {
+    position: absolute;
+    left: 50%;
+    margin: -70px 0 0 -200px;
+}
+.main {
+    background-image: url('../img/wavegrid.png');
+    z-index: 3;
+    padding-bottom: 3em;
+}
+.carousel-container {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+    position: relative;
+}
+.carousel img {
+    top: 0;
+    left: 0;
+    min-width: 100%}
+.carousel .carousel-control {
+    background: 0;
+    border: 0;
+    border-radius: 0;
+    height: 53px;
+    width: 33px;
+}
+.carousel .left {
+    background-image: url('../img/arrow_left.png');
+}
+.carousel .right {
+    background-image: url('../img/arrow_right.png');
+}
+.introduction {
+    padding: 4em 0;
+}
+.introduction h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.introduction p {
+    text-align: center;
+    line-height: 2.2em;
+    margin: 0 auto;
+    padding: 0 2em;
+    font-size: 14px;
+}
+.about {
+    background: url('../img/aboutpageimage.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 0;
+}
+.about .about-wrapper {
+    position: relative;
+    width: 300px;
+    left: 50%;
+    margin-left: -435px;
+    padding: 10em 0 7em 0;
+    background: url('../img/orange-square.png') repeat-y center;
+}
+.about .about-wrapper .about-block {
+    background: #f60;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 5px solid #f90;
+}
+.about .about-wrapper .about-block h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+}
+.about .about-wrapper .about-block p {
+    font-size: 13px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.menu-wrapper {
+    background: rgba(255, 153, 0, 0.15);
+    width: 900px;
+    margin: 0 auto;
+    padding: 6em 0 1em 0;
+    border: 4px solid rgba(255, 153, 0, 0.3);
+}
+.menu-wrapper .asterisk {
+    padding-left: 45px;
+}
+.menu-wrapper .header-wrap {
+    width: 100%;
+    text-align: center;
+    margin: 3em 0;
+}
+.menu-wrapper .header-wrap hr {
+    border-top: 3px solid #f90;
+    border-bottom: 2px solid #f90;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+    top: 30px;
+    width: 100%}
+.menu-wrapper h1 {
+    color: white;
+    background: #f60;
+    border: 5px solid #f90;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 1em;
+    position: relative;
+    z-index: 3;
+}
+.menu-wrapper h1 a {
+    color: white;
+}
+.menu-wrapper h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    text-align: left;
+    width: 800px;
+    margin: 0 auto 5px auto;
+    color: #009;
+}
+.menu-wrapper .menu-table {
+    width: 800px;
+    margin: 0 auto 2em;
+}
+.menu-wrapper .menu-table table {
+    table-layout: fixed;
+    float: left;
+    display: inline;
+    width: 390px;
+}
+.menu-wrapper .menu-table table:last-child {
+    float: right;
+}
+.menu-wrapper .menu-table table tr {
+    border-bottom: 1px dashed #009;
+}
+.menu-wrapper .menu-table table td {
+    padding-right: 10px;
+}
+.menu-wrapper .menu-table table td:nth-child(1) {
+    width: 200px;
+    padding-right: 12px;
+}
+.menu-wrapper .menu-table table td:nth-child(2) {
+    width: 140px;
+}
+.menu-wrapper .menu-table table td:nth-child(3) {
+    width: 41px;
+    padding-right: 0;
+}
+.menu-wrapper .menu-table .addtodrinks table td:nth-child(4) {
+    width: 0;
+}
+.menu-wrapper .specials {
+    width: 80%;
+    margin: 0 auto 2em;
+}
+.menu-wrapper .specials table {
+    width: 100%;
+    font-size: 20px;
+}
+.menu-wrapper .specials table tr {
+    line-height: 1.5em;
+}
+.menu-wrapper .specials table td {
+    padding-right: 20px;
+}
+.announcement {
+    background-color: #03c;
+    text-align: center;
+    padding: 20px;
+}
+.announcement h2 {
+    color: white;
+    font-size: 1.5em;
+}
+.announcement p {
+    color: white;
+    margin: 0;
+}
+.footer {
+    background: #f90;
+    background: url('orangesquare.png') repeat;
+    background: -moz-radial-gradient(center top, ellipse cover, #f90 0, #f60 50%);
+    background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%, #f90), color-stop(50%, #f60));
+    background: -webkit-radial-gradient(center top, ellipse cover, #f90 0, #f60 50%);
+    background: -o-radial-gradient(center top, ellipse cover, #f90 0, #f60 50%);
+    background: -ms-radial-gradient(center top, ellipse cover, #f90 0, #f60 50%);
+    background: radial-gradient(ellipse at center top, #f90 0, #f60 50%);
+    padding: 2em;
+    box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    position: relative;
+}
+.footer p {
+    color: white;
+}
+.footer .footerwidgets {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 740px;
+}
+.footer .footerwidgets p {
+    text-align: left;
+}
+.footer .footerwidgets h2 {
+    text-align: left;
+}
+.footer .footerwidgets .recent-post-item {
+    border-bottom: 0;
+}
+.footer .footerwidgets .recent-post-item .post-date {
+    font: 14px/21px Verdana, Geneva, sans-serif;
+    font-style: italic;
+}
+.footer .footerwidgets .recent-post-item .post-entry {
+    font: 14px/21px Verdana, Geneva, sans-serif normal;
+}
+.footer .footerwidgets .recent-post-item .post-title {
+    display: none;
+}
+.footer .footerwidgets .textwidget p {
+    text-align: left;
+    color: white;
+}
+.footer .footerwidgets .textwidget h3 {
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+.footer .footerwidgets .textwidget table {
+    color: white;
+    text-align: left;
+}
+.footer .footerwidgets .textwidget table td {
+    padding-right: 10px;
+}
+.footer .footerwidgets .footer-left {
+    float: left;
+    padding-right: 30px;
+    width: 276px;
+}
+.footer .footerwidgets .footer-middle {
+    float: left;
+    padding-right: 30px;
+}
+.footer .footerwidgets .footer-right {
+    float: left;
+}
+.footer .credit {
+    margin: 0 auto;
+}
+.footer .bubbles {
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    z-index: 4;
+    bottom: -130px;
+}
+.afterfooter {
+    background: transparent url('../img/grey_wash_wall.png');
+    width: 100%;
+    height: 10em;
+    position: relative;
+    z-index: -1;
+}
+@media(min-width:804px) and (max-width:979px) {
+    .container {
+    width: 100%}
+.menu-navigation {
+    margin-top: 180px;
+    width: 100%}
+.menu-navigation:before, .menu-navigation:after {
+    content: none;
+}
+.menu-navigation ul {
+    margin: 0 auto;
+    width: 500px;
+    position: relative;
+}
+.menu-navigation ul:before, .menu-navigation ul:after {
+    content: none;
+}
+.menu-navigation ul li {
+    margin-right: 0;
+}
+.menu-navigation ul li:nth-of-type(3) {
+    margin-left: 0;
+}
+.menu-navigation .logo {
+    bottom: 100%}
+.introduction {
+    padding: 2.5em 2em;
+}
+.menu-wrapper {
+    width: 100%;
+    padding-top: 1em;
+}
+.mobilefix {
+    margin: 0 15%}
+.about .about-wrapper {
+    left: 0;
+    margin: 0 auto;
+}
+}@media(max-width:803px) {
+    .container {
+    width: 100%}
+.menu-navigation {
+    margin-top: 180px;
+    width: 100%}
+.menu-navigation:before, .menu-navigation:after {
+    content: none;
+}
+.menu-navigation ul {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.menu-navigation ul>li {
+    width: 25%}
+.menu-navigation ul>li ul li a {
+    text-align: center;
+}
+.menu-navigation ul li:nth-of-type(3) {
+    margin-left: 0;
+}
+.menu-navigation ul:before, .menu-navigation ul:after {
+    border: 0;
+    display: none;
+}
+.menu-navigation .logo {
+    bottom: 100%;
+    left: 55%}
+.introduction {
+    padding: 2em 0;
+}
+.introduction h1 {
+    padding: 0 1.5em;
+}
+.introduction p {
+    padding: 1em 5em;
+}
+.menu-wrapper {
+    width: 100%;
+    padding-top: 1em;
+}
+.menu-wrapper h2 {
+    width: 100%}
+.menu-wrapper .menu {
+    padding: 0 4em;
+}
+.menu-wrapper .menu-table {
+    width: 100%}
+.menu-wrapper .menu-table table {
+    margin: 0 auto;
+    float: none;
+}
+.menu-wrapper .menu-table table:last-child {
+    float: none;
+}
+.menu-wrapper .menu-table table td:nth-child(1) {
+    width: 9%}
+.menu-wrapper .menu-table table td:nth-child(2) {
+    width: 10%}
+.menu-wrapper .menu-table table td:nth-child(3) {
+    width: 1%;
+    padding-right: 0;
+}
+.menu-wrapper .specials {
+    width: 90%}
+.menu-wrapper .specials table {
+    font-size: 16px;
+}
+.footer {
+    position: relative;
+}
+.footer ul {
+    position: relative;
+    margin: 0 auto;
+}
+.footer .footerwidgets {
+    width: 100%}
+.footer .footerwidgets .footer-left {
+    width: 50%}
+.footer .footerwidgets .footer-middle {
+    width: 50%}
+.footer .footerwidgets .footer-right {
+    width: 50%}
+.footer .footerwidgets .left {
+    float: left;
+}
+.carousel-control {
+    display: none;
+}
+.about .about-wrapper {
+    left: 0;
+    margin: 0 auto;
+}
+}@media(max-width:490px) {
+    .introduction {
+    padding: 1em 0;
+}
+.menu-navigation ul {
+    width: 100%}
+.menu-navigation ul>li {
+    width: 50%}
+.menu-navigation ul>li ul li {
+    padding-left: 10%;
+    width: 50%}
+.menu-navigation ul>li ul li a {
+    width: 82%;
+    padding: 0;
+}
+.menu-navigation ul li:nth-child(3), .menu-navigation ul li:nth-child(4) {
+    border-top: 2px solid #f60;
+}
+.menu-navigation .logo img {
+    max-width: 95%!important;
+    height: auto;
+    margin: 0 auto 1em auto;
+    display: block;
+}
+.menu-wrapper .specials {
+    width: 95%}
+.menu-wrapper .specials table {
+    font-size: 12px;
+}
+.menu-wrapper .menu {
+    padding: 0 1em;
+}
+.about .about-wrapper {
+    left: 0;
+    margin: 0 auto;
+}
+.footer .footerwidgets .footer-left {
+    width: 100%}
+.footer .footerwidgets .footer-middle {
+    width: 100%}
+.footer .footerwidgets .footer-right {
+    width: 100%}
+}
